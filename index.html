@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Deadlines</title>
+
+    <style>
+      *,
+      *:after,
+      *:before {
+        box-sizing: inherit;
+      }
+
+      html {
+        box-sizing: border-box;
+      }
+
+      body {
+        align-items: center;
+        color: #222;
+        display: flex;
+        flex-direction: column;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 4rem;
+        height: 100vh;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+      }
+
+      main {
+        font-feature-settings: tnum;
+        font-variant-numeric: tabular-nums;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div style="margin-bottom: 2rem;">You have...</div>
+      <div style="font-size: 8rem; margin-bottom: 2rem;">
+        <span class="days">0 days</span>, <span class="hours">0 hours</span>,
+        <span class="minutes">0 minutes</span>, and
+        <span class="seconds">0 seconds</span>
+      </div>
+      <div>...to get your shit done.</div>
+    </main>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
