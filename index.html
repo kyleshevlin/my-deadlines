@@ -15,6 +15,7 @@
 
       html {
         box-sizing: border-box;
+        font-size: 100%;
       }
 
       body {
@@ -23,12 +24,11 @@
         display: flex;
         flex-direction: column;
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-        font-size: 4rem;
-        height: 100vh;
+        font-size: 2rem;
+        min-height: 100vh;
         justify-content: center;
         margin: 0;
         padding: 0;
-        width: 100vw;
       }
 
       main {
@@ -38,12 +38,18 @@
         padding-right: 2rem;
         text-align: center;
       }
+
+      @media (min-width: 768px) {
+        html {
+          font-size: 200%;
+        }
+      }
     </style>
   </head>
   <body>
     <main>
-      <div style="margin-bottom: 2rem;">You have...</div>
-      <div style="font-size: 8rem; margin-bottom: 2rem;">
+      <div style="margin-bottom: 1rem;">You have...</div>
+      <div style="font-size: 4rem; margin-bottom: 1rem;">
         <span class="days">0 days</span>, <span class="hours">0 hours</span>,
         <span class="minutes">0 minutes</span>, and
         <span class="seconds">0 seconds</span>
